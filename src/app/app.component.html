@@ -1,32 +1,37 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#"> <img src="../../assets/images/Logo3.PNG" alt="henrit track" width= 50% height= 50% class="circle responsive-img"> </a>
+      <div class="container">
+    <a class="navbar-brand" href="#"> <img src="../../assets/images/Logo3.PNG" class="img-circle mg-responsive" alt="henrit track" width= 90% height= 150%> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="/">Home &nbsp;&nbsp;&nbsp; <span class="sr-only">(current)</span></a> 
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/']" fragment="about">about us</a>
+          <a class="nav-link" [routerLink]="['/']" fragment="about">about us &nbsp;&nbsp;&nbsp;</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/']" fragment="product">product us</a>
+          <a class="nav-link" [routerLink]="['/']" fragment="product">product &nbsp;&nbsp;&nbsp;</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/']" fragment="contact">contact us</a>
+          <a class="nav-link" [routerLink]="['/']" fragment="contact">contact us &nbsp;&nbsp;&nbsp;</a>
         </li>
       </ul>
-    </div>
+      <a class="float-right" style ="text-decoration: none;  color: hotpink; font-size:1.2em;" href="http://174.142.39.183/webgps" target="_blank">Login to your account</a>
+    </div>  
+  
+  </div>
   </nav>
-</header>
 
+</header>
+<div class="container">
 <router-outlet>
 </router-outlet>
 
-
+</div>
 <footer class="container">
   <p class="float-right"><a href="#">Back to top</a></p>
   <p>
